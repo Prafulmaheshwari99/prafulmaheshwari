@@ -1,0 +1,550 @@
+@import 'utilities.css';
+html{
+    scroll-behavior:smooth;
+}
+:root{
+    --primary:#3DCFD3;
+    --lbrown: #EC7063;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --cards: #283747;
+    --cardshover: #2E4053;
+    --cardsbg:#34495E;
+    --para:#CACFD2;
+    --bar:#FF99FF;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+header{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Wind.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+	}
+.container{
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav{
+    position: fixed;
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(14, 15, 17, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Jet.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+    padding: 10px 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+    opacity: 50%;
+}
+header nav:hover{
+    opacity: 100%;
+    transition: all 0.3s ease-in;
+}
+header nav .Left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    margin-left: 2rem;
+}
+header nav .Left a:hover{
+    color: var(--primary);
+}
+
+.hero{
+    padding: 10rem 0;
+}
+.hero .left img{
+    width: 400px;
+}
+.hero .right{
+    color:var(--pure);
+}
+.hero .right h5{
+    font-size: 1.5rem;
+    color: var(--lbrown);
+    margin-bottom: 0.5rem;
+    
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+
+}
+.hero .right{
+    margin-top: -6rem;
+}
+/*Internship*/
+section.work{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(14, 15, 17, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Spark.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.work h1{
+    font-family: 'Lato' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+section.hmt{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(14, 15, 17, 0.9), rgba(46, 49, 65, 0.9)), url("../images/HMT\ clock.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.hmt .flex-1 img:hover{
+    animation: zoom 2s linear infinite; 
+}
+
+section.hmt h1{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--pure);
+}
+section.hmt h1 span{
+    color: var(--primary);
+}
+section.hmt h3{
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--pure);
+}
+section.hmt p+ul{
+    font-weight: 1;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: var(--para);
+    font-family: 'Cormorant Garamond' sans-serif;    
+}
+section.hmt a{
+    color: var(--ternary);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+section{
+    padding: 6rem 0;
+}
+section.tcpl .flex-1 img{
+    margin-left: 13rem;
+}
+section.tcpl .flex-1 img:hover{
+    animation: zoom 2s linear infinite;
+}
+section.tcpl h1{
+    color: var(--pure);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+section.tcpl h1 span{
+    color: var(--primary);
+}
+section.tcpl h3{
+    color: var(--pure);
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+section.tcpl p{
+    color: var(--pure);
+}
+section.tcpl p+ul{
+    font-weight: 1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--para);
+    font-family: 'Cormorant Garamond' sans-serif; 
+}
+    
+section.tcpl a{
+    color: var(--ternary);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+section.tcpl{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgb(26, 26, 27, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Engine.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.ninja{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgb(26, 26, 27, 0.9), rgba(46, 49, 65, 0.9)), url("../images/jklu_building.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.ninja .flex-1 img{
+    margin-left: 5rem;
+}
+section.ninja .flex-1 img:hover{
+    animation: zoom 2s linear infinite;
+}
+
+section.ninja h1{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:var(--pure);
+}
+section.ninja h1 span{
+    color: var(--primary);
+}
+section.ninja h3{
+    color: var(--pure);
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+section.ninja p{
+    color: var(--pure);
+}
+section.ninja p+ul{
+    font-weight: 1;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--para);
+    font-family: 'Cormorant Garamond' sans-serif; 
+}
+section.ninja a{
+    color: var(--ternary);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.section-heading{
+     color: var(--pure);
+     text-align: center;
+     margin-bottom: 1rem;
+     line-height: 0.5;
+}
+/*Project*/
+section.projects{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgb(26, 26, 27, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Jet.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.projects h1{
+    font-family: 'Lato' Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+section.projects .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.projects .card-wrapper .card{
+    padding: 3rem 2rem;
+    border-radius: 20%;
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgb(26, 26, 27, 0.9), rgba(46, 49, 65, 0.9)), url("../images/CNC.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.projects .card-wrapper .card h2{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    text-align: center;
+}
+section.projects .card-wrapper .card a{
+    font-family: 'Lato' sans-serif;
+    color: var(--ternary);
+    line-height: 1.4;
+    color: var(--pure);
+    font-weight: lighter;
+}
+section.projects .card-wrapper .card p+ul{
+    font-family: 'Lato' sans-serif;
+    color: var(--para);
+    line-height: 1.6;
+    font-weight: lighter;
+}
+section.projects .card-wrapper .card:hover{
+    transition: all 0.5s;
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(15, 15, 17, 0.9), rgba(6, 10, 32, 0.9)), url("../images/CNC.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+ transform: scale(0.92); 
+}
+/*animation: zoom 2s linear infinite;*/
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes zoom{
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+section.projects .card-wrapper .card:hover h2,p{
+    color: var(--pure);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+/*software skills*/
+section.software{
+    background: var(--dark);
+	background-image: linear-gradient(to Right, rgba(45, 46, 49, 0.9), rgba(21, 21, 26, 0.9)), url("../images/Plasma.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.software h1{
+    color: var(--primary);
+    font-weight: 400;
+}
+section.software p{
+    color: var(--para);
+    font-weight: lighter;
+}
+section.software .softs{
+    width: 700px;
+    margin: 30px auto;
+    color: var(--pure);
+}
+section.software .softs h3{
+    color: var(--para);
+}
+
+section.software .softs .bar{
+    background: var(--ternary);
+    display: block;
+    height: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    overflow: hidden0;
+    box-shadow: 0 0 10px var(--bar);
+}
+section.software .softs .bar span{
+    height: 2px;
+    float: left;
+    background: var(--primary);
+}
+section.software .softs .bar .autocad{
+    width: 60%;
+    animation: autocad 2s;
+}
+
+section.software .softs .bar .solidworks{
+    width: 80%;
+    animation: solidworks 3s;
+}
+
+section.software .softs .bar .creo{
+    width: 70%;
+    animation: creo 4s;
+}
+
+section.software .softs .bar .hyperwork{
+    width: 40%;
+    animation: hyperwork 5s;
+}
+
+section.software .softs .bar .python{
+    width: 40%;
+    animation: python 6s;
+}
+section.software .softs .bar .mysql{
+    width: 80%;
+    animation: mysql 7s;
+}
+
+@keyframes autocad {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+@keyframes solidworks {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+@keyframes creo{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+@keyframes hyperwork {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+    
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+    
+}
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+
+section.software .softs:hover{
+    animation: zoom 5s linear infinite;
+}
+
+/*More about me*/
+section.more{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.9), rgba(14, 17, 36, 0.9)), url("../images/Jet.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+
+section.more h1{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Cormorant Garamond' sans-serif;
+    color: var(--primary);
+}
+section.more p+ul{
+    font-weight: 100;
+    font-size: 0.8rem;
+    font-family: 'Lato' sans-serif;
+    margin-bottom: 1rem;
+    color: var(--pure);
+    line-height: 2rem;
+}
+section.more img{
+    border-radius: 100%;
+    margin-right: 2rem;
+    display: block;
+}
+section.contact{
+    background: var(--dark);
+	background-image: linear-gradient(to top, rgba(33, 34, 41, 0.9), rgba(46, 49, 65, 0.9)), url("../images/Spark.jpg");
+	background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
+}
+section.contact h1{
+    color: var(--primary);
+    font-weight: 400;
+}
+section.contact .social{
+    display: flex;
+}
+section.contact .social a{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: 10px 0;
+}
+section.contact .container h5{
+    text-align: center;
+    color: #FF8A65;
+    font-weight: lighter;
+}
